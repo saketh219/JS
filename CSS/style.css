@@ -1,0 +1,233 @@
+.section1{
+  background-color: #D6D2C4;
+}
+.section2{
+  background-color: black;
+}
+hr{
+  border: dotted white 6px !important;
+  border-bottom: 0px !important;
+  width: 5% !important;
+  margin: 40px auto;
+}
+.part1{
+  padding: 1.5rem;
+}
+.part1img{
+  width:60%;
+  border-radius: 40%
+}
+.heading{
+  font-weight: 500;
+  font-family: fantasy;
+  padding-top: 25px;
+}
+.heading2{
+  padding-top: 2rem;
+  font-family: sans-serif;
+  font-weight: 400;
+
+}
+.time{
+  background-color: #f44336 !important;
+  width: 50%;
+  box-shadow: 5px 3px #888888;
+}
+.timedrop{
+  margin-top: 1rem;
+  padding: 10% !important;
+  font-family: 'Orbitron', sans-serif;
+  color: lime;
+  background-color: black !important;
+  width: 100%;
+  text-shadow: 2px 2px 6px red;
+  letter-spacing: 5px;
+  box-shadow: 5px 3px #888888;
+}
+.date{
+  background-color: #7e57c2 !important;
+  width: 50%;
+  box-shadow: 5px 3px #888888;
+}
+.datedrop{
+  margin-top: 1rem;
+  padding: 10% !important;
+  font-family: 'Orbitron', sans-serif;
+  color: lime;
+  background-color: black !important;
+  width: 100%;
+  text-shadow: 2px 2px 6px red;
+  letter-spacing: 5px;
+  box-shadow: 5px 3px #888888;
+}
+@media only screen and (max-width: 992px){
+     .boxes{
+       margin-top: 5% !important;
+     }
+     .calcultordrop{
+       padding: 5% 2% 2% !important;
+     }
+     .part1img{
+       width: 85%;
+     }
+     .hide{
+       display: none;
+     }
+     .set{
+       padding-left: 10%;
+     }
+     .saketh{
+       width:35% !important;
+       margin-top: 0 !important;
+       padding: 0 !important;
+     }
+     .sci li a{
+       margin-top: 20px;
+     }
+     .k{
+       -webkit-box-flex: 0;
+       -ms-flex: 0 0 25%;
+       flex: 0 0 25%;
+       max-width: 50%;
+       /* padding-left: 150px; */
+     }
+     .drumk{
+       margin-left: 150px !important;
+     }
+}
+@media only screen and (max-width: 816px){
+  .drumk{
+    margin-left: 100px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .calcultordrop{
+    padding:5% 20% 1% !important;
+  }
+}
+input[type="button"]{
+  background-color: black;
+  color: white;
+  border: solid black 2px;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+}
+input[type="text"]{
+  background-color: white;
+  border:solid black 2px;
+  width: 100%;
+  height: 60px;
+}
+.calcultor{
+  background-color: #7e026f !important;
+  width: 50%;
+  box-shadow: 5px 3px #888888;
+}
+.calcultordrop{
+  margin-top: 1rem;
+  background-image: url(calculator.jpg);
+  width: 100%;
+  box-shadow: 5px 3px #888888;
+}
+.calcbor{
+  margin-bottom: 10px;
+  box-shadow: 0 -10px 20px -5px #81B214;
+
+}
+.music{
+  background-color: #04abd1 !important;
+  width: 50%;
+  box-shadow: 5px 3px #888888;
+}
+.musicdrop{
+  margin-top: 1rem;
+
+  width: 100%;
+  text-shadow: 2px 2px 6px red;
+  box-shadow: 5px 3px #888888;
+  background-image: url(drums.jpg);
+}
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  line-height:1;
+  font-weight: 900;
+  text-shadow: 2px 2px 6px red;
+  border-radius:30%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+}
+.drumk {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  line-height:1;
+  font-weight: 900;
+  text-shadow: 2px 2px 6px red;
+  border-radius:30%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+}
+.socialMedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+.sci{
+  position: relative;
+  display: flex;
+}
+.sci li{
+  list-style: none;
+}
+.sci li a{
+  position: relative;
+  display: inline-block;
+  width:120px;
+  height: 120px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 4rem;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  box-shadow: 5px 3px #888888;
+  transition: background 0.25s;
+}
+.sci li a:hover.facebook{
+  background: #0078FF;
+}
+.sci li a:hover.instagram{
+  background: #E1306C;
+}
+
+.sci li a:hover.linkedin{
+  background:  #2867B2;
+}
+.sci li a:hover.snapchat{
+  background:  #FFFC00;
+}
+.sci li a:hover .fa{
+  color: white;
+}
+.ranga{
+  margin-top: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  color: lime;
+  background-color: black !important;
+  width: 100%;
+  text-shadow: 2px 2px 6px red;
+  letter-spacing: 5px;
+}

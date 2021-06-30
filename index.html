@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LETS GO</title>
+
+    <link rel="icon" href="images\favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+   </style>
+  <body>
+    <section class="section1">
+      <div class="container-fluid">
+        <div class="row part1">
+        <div class=" col  text-center">
+          <img class="part1img"src="images/rings.gif" alt="gif">
+        </div>
+        <div class=" col heading  text-center">
+          <h2 >WELCOME</h2>
+        </div>
+        <div class=" col  text-center">
+          <img class="part1img"  src="images/rings.gif" alt="gif">
+        </div>
+        </div>
+      </div>
+      <hr style="margin-top: 20px;">
+      <div class="container-fluid" style="padding: 15px 90px;">
+        <div class="row">
+          <div class="col-lg-6 text-center  ">
+            <button  style="color:white;" class="btn time" type="button" data-toggle="collapse" data-target="#drop-time" aria-expanded="false" aria-controls="multiCollapseExample2">
+              TIME
+            </button>
+            <div class="collapse multi-collapse" id="drop-time">
+              <div  class="card card-body timedrop " id="timejs">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center boxes ">
+              <button  style="color:white;" class="btn date" type="button" data-toggle="collapse" data-target="#drop-date" aria-expanded="false" aria-controls="multiCollapseExample2">
+                DATE
+              </button>
+              <div  class="collapse multi-collapse" id="drop-date">
+                <div class="card card-body datedrop" id="datejs">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container-fluid" style="padding: 30px 90px;">
+        <div class="row">
+          <div class="col text-center  ">
+            <button  style="color:white;" class="btn calcultor" type="button" data-toggle="collapse" data-target="#drop-calcultor" aria-expanded="false" aria-controls="multiCollapseExample2">
+              CALCULATOR
+            </button>
+            <div class="collapse multi-collapse" id="drop-calcultor">
+              <div  class="card card-body calcultordrop " id="calcultor">
+                <table class="calcbor" border="0">
+
+               <tr>
+                 <td colspan="3"><input type="text" id = "result"></td>
+                 <td><input type="button" value="c" onclick="clr()"></td>
+               </tr>
+               <tr>
+                 <td><input type="button" value="1" onclick="display('1')"></td>
+                 <td><input type="button" value="2" onclick="display('2')"></td>
+                 <td><input type="button" value="3" onclick="display('3')"></td>
+                 <td><input type="button" value="/" onclick="display('/')"></td>
+               </tr>
+               <tr>
+                 <td><input type="button" value="4" onclick="display('4')"></td>
+                 <td><input type="button" value="5" onclick="display('5')"></td>
+                 <td><input type="button" value="6" onclick="display('6')"></td>
+                 <td><input type="button" value="-" onclick="display('-')"></td>
+               </tr>
+               <tr>
+                 <td><input type="button" value="7" onclick="display('7')"></td>
+                 <td><input type="button" value="8" onclick="display('8')"></td>
+                 <td><input type="button" value="9" onclick="display('9')"></td>
+                 <td><input type="button" value="+" onclick="display('+')"></td>
+               </tr>
+               <tr>
+                 <td><input type="button" value="." onclick="display('.')"></td>
+                 <td><input type="button" value="0" onclick="display('0')"></td>
+                 <td><input type="button" value="*" onclick="display('*')"></td>
+                 <td><input type="button" value="=" onclick="equate('=')"></td>
+               </tr>
+              </table>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <hr  class="hide"style="margin-top: 20px;">
+      <div class="container-fluid" style="padding: 30px 90px;">
+        <div class="row">
+          <div class="col text-center  ">
+            <button  style="color:white;" class="btn music" type="button" data-toggle="collapse" data-target="#drop-music" aria-expanded="false" aria-controls="multiCollapseExample2">
+              MUSIC
+            </button>
+          </div>
+          </div>
+          <div class="collapse multi-collapse" id="drop-music">
+            <div  class="row card card-body musicdrop " id="music">
+              <div class="set">
+                 <button class="w drum ">w</button>
+                 <button class="a drum  ">a</button>
+                 <button class="s drum   ">s</button>
+                  <button class="d drum  ">d</button>
+                  <button class="j drum  ">j</button>
+                  <button class="l drum  ">l</button>
+                  <button class="k drum drumk ">k</button>
+                </div>
+
+              </div>
+              </div>
+        </div>
+        </section>
+        <section class="section2">
+         <div class="container-fluid">
+           <div class="row">
+             <div class="col text-center ranga">
+               <h2>RANGA SAKETH</h2>
+               </div>
+
+           </div>
+          </div>
+        <div class="container-fluid socialMedia">
+          <ul class=" row sci" style="padding-left: 0px;">
+            <li class="col-lg-3 col-md-3 col-sm-3" data-text = "Facebook"><a href="https://www.facebook.com/profile.php?id=100010357907944" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-sm-3" data-text = "Instagram"><a href="https://www.instagram.com/ranga_saketh/"class="instagram"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-sm-3"data-text = "Snapchat"><a href="https://www.snapchat.com/"class="snapchat"target="_blank"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-sm-3"data-text = "Linkedin"><a href="https://www.linkedin.com/in/saketh-ranga-a354631b0/"class="linkedin"target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+
+        </section>
+        <script src="CODE/index.js" charset="utf-8"></script>
+
+
+
+
+  </body>
+</html>
